@@ -42,7 +42,10 @@ export default {
       type: String
     },
     variant: {
-      type: String
+      type: String,
+      validator: value => {
+        return ['red', 'green', 'blue'].includes(value)
+      }
     },
     buttonsVisible: {
       type: Boolean,
