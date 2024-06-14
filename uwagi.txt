@@ -1,0 +1,20 @@
+W ramach praktyki spróbuj przejrzeć komunikację między komponentami i połapać się w kodzie. 
+Oczywiście wykorzystano tu dokładnie to, co dobrze już znasz. 
+A więc komunikacja parent -> child jest realizowana za pomocą propsów, a w drugą stronę – eventów i nasłuchiwaczy.
+
+ButtonItem.vue:
+
+Opis Props: 
+
+Pierwszy tyczy się oczywiście ikony, której należy użyć. 
+W drugim powinien być przekazywany rozmiar 
+(np. 2 będzie oznaczać 2rem). Trzeci to rozmiar naszego buttonu. 
+Czwarty (movement) ustala po prostu, 
+o jaką wartość ma się przesunąć w górę lub w dół. 
+Cały ruch po najechaniu brał się bowiem w naszych buttonach z 
+odpowiedniej zmiany wartości margin-top. 
+Oczekujemy więc tutaj na przekazanie wartości w stylu 1, -0.5, 
+co będzie sugerowało o ile jednostek rem i w którym kierunku 
+musimy przestawić ten element.
+
+Vue pozwala bowiem na ustalanie wartości domyślnych.
